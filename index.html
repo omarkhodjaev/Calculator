@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form name="Calculator" >
+      <table>
+        <tr>
+          <td>
+            <input class="place" type="text" name="display" id="display" placeholder="0" />
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="seven" value="7" onclick="Calculator.display.value += '7'">
+                <input type="button" name="eight" value="8" onclick="Calculator.display.value += '8'">
+                <input type="button" name="nine" value="9" onclick="Calculator.display.value += '9'">
+                <input type="button" name="times" class="operator" value="x" onclick="Calculator.display.value += '*'">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="four" value="4" onclick="Calculator.display.value += '4'">
+                <input type="button" name="five" value="5" onclick="Calculator.display.value += '5'">
+                <input type="button" name="six" value="6" onclick="Calculator.display.value += '6'">
+                <input type="button" name="minus" class="operator" value="-" onclick="Calculator.display.value += '-'">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="one" value="1" onclick="Calculator.display.value += '1'">
+                <input type="button" name="two" value="2" onclick="Calculator.display.value += '2'">
+                <input type="button" name="three" value="3" onclick="Calculator.display.value += '3'">
+                <input type="button" name="plus" class="operator" value="+" onclick="Calculator.display.value += '+'">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="clear" value="c" onclick="Calculator.display.value = ''">
+                <input type="button" name="zero" value="0" onclick="Calculator.display.value += '0'">
+                <input type="button" name="doit" value="=" onclick="Calculator.display.value = eval(Calculator.display.value)">
+                <input type="button" name="div" class="operator" value="/" onclick="Calculator.display.value += '/'">
+            </td>
+        </tr>
+      </table>
+    </form>
+    <a class="nice" href="https://t.me/Omarkhodjaev" title="Excellent !!! You are very smart ">&#x1F48C;</a>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
